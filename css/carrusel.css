@@ -1,8 +1,8 @@
-    .carousel-inner{
+.carousel-inner{
        //height: 200px;
+       border-radius: 7px 7px 7px 7px;
     }
-
-   .carousel-item img {
+.carousel-item img {
 
    	height: 200px;
    }
@@ -10,5 +10,10 @@
 .carousel-item .img-fluid {
   width:100%;
   height:100%;
+}
+
+#carouselExampleIndicators{
+margin-top: 15px;
+
 }
  

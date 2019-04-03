@@ -13,12 +13,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/all.min.css">
     <link rel="stylesheet" href="css/carrusel.css">
-    
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top py-2 site-header">
   <img class="img-fluid" src="content/logo.png">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -49,7 +51,7 @@
   <button type="button" class="list-group-item list-group-item-action">Vestibulum at eros</button>
 </div>
       </div>
-      <div class="col-sm-9 col-md-9 bg-primary">
+      <div class="col-sm-9 col-md-9 ">
        <div class="row">
 
 <div class="col-sm-12 col-md-12">
@@ -85,37 +87,37 @@
 
        </div>
 
-       <div class="row">
+       <div class="row rowcard">
        	<div class="container-fluid col-sm-4 col-md-4">
-       	<div class="card border-dark mb-3 rounded-0" style="max-width: 35rem;">
-		  <div class="card-header">Header</div>
-		  <div class="card-body text-dark">
-		    <h5 class="card-title">Dark card title</h5>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  </div>
-		   <div class="card-footer bg-transparent">Footer</div>
-		</div>
+       <div class="card text-white bg-dark mb-3">
+         <div class="card-header">Buscador de Procesos</div>
+         <div class="card-body">
+         
+          <input class="form-control mr-sm-2" type="text" placeholder="Buscar Proceso">
+         <p class="card-text">Aqui podras buscar procesos relacionados con: {{Categoria}} </p>
+         </div>
+       </div>
        	</div>
-       	<div class="container-fluid col-sm-4 col-md-4">
-       		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui a hic omnis.</p>
+       	<div class="container-fluid col-sm-8 col-md-8">
+       	<div class="card text-white bg-dark mb-3">
+         <div class="card-header">Procesos</div>
+         <div class="card-body">
+          <h5 class="card-title">{{Nombre de Proceso}}</h5>
+         <p class="card-text">{{Información de Proceso}}</p>
+         </div>
+       </div>
        	</div>
-       	<div class="container-fluid col-sm-4 col-md-4">
-       		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum inventore dolores culpa vitae quod officiis minus quisquam non officia, eius velit aut perspiciatis alias saepe asperiores molestias facere rem sequi.</p>
-       	</div>
-
        </div>
 
       </div>
 </div>
 </div>
 
-
-</div>
-
-
-<div id="IndexFooterVue" class="container-fluid bg-dark py-4" style="bottom:0px">
+<div id="IndexFooterVue" class="py-1">
     <footerglobal></footerglobal>
 </div>
+
+
 <script src="js/jQuery_3.3.1.js"></script> 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/all.min.js"></script>

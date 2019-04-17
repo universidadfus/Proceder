@@ -1,4 +1,16 @@
 .menu{	
 	margin-bottom: 15px;
 	margin-top: 18px;
+	border-radius: 4px !important;
+
+	
+}
+
+.jumbotron{
+
+	background: url("content/proceder.svg") no-repeat center center !important; 
+    /*-webkit-background-size: 100% 100% !important;
+    -moz-background-size: 100% 100% !important;
+    -o-background-size: 100% 100% !important;*/
+    background-size:cover!important;
 }

@@ -31,8 +31,6 @@
     <ul class="navbar-nav mr-auto">
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
@@ -40,40 +38,29 @@
 
 <div class="container-fluid">
 	<div class="row" >
-      <div class="col-sm-3 col-md-3">
-		<div class="list-group list-group-flush menu">
-		  <button type="button" class="list-group-item list-group-item-action">
-			{{Unidad de Atención al Estudiante}}
-		  </button>
-		  <button type="button" class="list-group-item list-group-item-action">{{Bienestar Institucional}}
-		  </button>
-		  <button type="button" class="list-group-item list-group-item-action">{{Programa de Permanencia}}</button>
-		  <button type="button" class="list-group-item list-group-item-action">{{Centro de Lenguas}}</button>
-		</div>
-		<div class="row">
-
-		<div class="col-sm-12 col-md-12">
-		 <div class="card text-black bg-light mb-3">
-      <div class="card-header">Información de Área</div>
-          <div class="card-body">
-          <p class="card-text"></p>
-		  <h5>Nombre</h5>
-      <h6><img class="iconos" src="content/email.svg" alt="prueba"> {{Correo}}</h6>
-      <h6><img class="iconos" src="content/phone.svg" alt="prueba"> {{Telfono}}</h6>
-      <h6><img class="iconos" src="content/mobil.svg" alt="prueba"> {{Mobil}}</h6>
-      <h6><img class="iconos" src="content/time.svg" alt="prueba"> {{Horaio de atenciòn}}</h6>
-          </div>
-    </div>
+      <div class="col-12 col-sm-3">
+        <div class=" menu   list-group">
+  <a href="#" class="list-group-item list-group-item-action">{{Unidad de Atención al Estudiante}}</a>  
+  <a href="#" class="list-group-item list-group-item-action">{{Bienestar Institucional}}</a>  
+  <a href="#" class="list-group-item list-group-item-action">{{Programa de Permanencia}}</a>  
+  <a href="#" class="list-group-item list-group-item-action">{{Centro de Lenguas}}</a>
+  <a href="#" class="list-group-item list-group-item-action">{{Centro de Lenguas}}</a> 
+</div>
 		
-		</div>
-		</div>
       </div>
-      <div class="col-sm-9 col-md-9 ">
+      <div class=" d-none d-sm-none d-md-block col-sm-9 col-md-9 ">
        <div class="row">
 
 <div class="col-sm-12 col-md-12">
 
-			<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+
+<div class="menu jumbotron jumbotron-fluid">
+  <div class="container-fluid">
+    <h1 class="display-4">Procesos</h1>
+    <p class="lead">Fundación  Universitaria San Mateo</p>
+  </div>
+</div>
+			<!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			  <ol class="carousel-indicators">
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -98,13 +85,35 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			  </a>
-			</div>
+			</div>-->
        	 </div>
 
        </div>
 
-       <div class="row rowcard">
-       	<div class="container-fluid col-sm-4 col-md-4">
+
+      </div>
+</div>
+
+<div class="row">
+
+
+  
+
+   <div class="col-sm-3 col-md-3">
+     <div class="card text-black bg-light mb-3">
+      <div class="card-header">Información de Área</div>
+          <div class="card-body">
+          <p class="card-text"></p>
+      <h5>Nombre</h5>
+      <h6><img class="iconos" src="content/email.svg" alt="prueba"> {{Correo}}</h6>
+      <h6><img class="iconos" src="content/phone.svg" alt="prueba"> {{Telfono}}</h6>
+      <h6><img class="iconos" src="content/mobil.svg" alt="prueba"> {{Mobil}}</h6>
+      <h6><img class="iconos" src="content/time.svg" alt="prueba"> {{Horaio de atenciòn}}</h6>
+          </div>
+    </div>
+    
+    </div>
+<div class="col-sm-3 col-md-3">
        <div class="card text-white bg-dark mb-3">
          <div class="card-header">Buscador de Procesos</div>
          <div class="card-body">
@@ -113,9 +122,9 @@
          <p class="card-text">Aqui podras buscar procesos relacionados con: {{Categoria}} </p>
          </div>
        </div>
-       	</div>
-       	<div class="container-fluid col-sm-8 col-md-8">
-       	<div class="card text-white bg-dark mb-3">
+        </div>
+        <div class="col-sm-3 col-md-6">
+        <div class="card text-white bg-dark mb-3">
          <div class="card-header">Procesos</div>
          <div class="card-body">
           <h5 class="card-title">{{Nombre de Proceso}}</h5>
@@ -123,13 +132,14 @@
           Un estudiante que, habiendo aplazado, solicita retomar su proceso académico en uno de los programas de la institución, previa solicitud presentada ante la Unidad encargada de recepcionar las solicitudes de los estudiantes, en un término superior a dos periodos académicos contados desde el momento en que se formalizó su solicitó su aplazamiento.
           El estudiante que, habiendo desertado de su proceso académico, solicita retomar su proceso educativo mediante solicitud presentada ante la UAU.
           Quién solicite reingreso a la Institución, deberá tener en cuenta que:
-}}</p>
+          }}
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit culpa, doloribus aperiam voluptate incidunt quasi quod rerum? Molestiae, veniam, eligendi. Dolorem culpa quo libero omnis placeat inventore quasi doloribus sequi obcaecati nulla asperiores consequatur facere facilis dolore maxime, iure quidem?</p>
          </div>
        </div>
-       	</div>
-       </div>
+        </div>
 
-      </div>
+
 </div>
 </div>
 

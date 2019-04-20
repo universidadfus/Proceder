@@ -3,9 +3,7 @@ CREATE TABLE `Unidad` (
 	`nombreUnidad` varchar(50) NOT NULL,
 	`descripcionUnidad` varchar(1024) NOT NULL,
 	`emailUnidad` varchar(50) NOT NULL,
-	`idTelefono` INT NOT NULL,
 	`movilUnidad` INT NOT NULL,
-	`idHorario` INT NOT NULL,
 	PRIMARY KEY (`idUnidad`)
 );
 
@@ -52,9 +50,19 @@ CREATE TABLE `Dia` (
 	PRIMARY KEY (`idDia`)
 );
 
-ALTER TABLE `Unidad` ADD CONSTRAINT `Unidad_fk0` FOREIGN KEY (`idTelefono`) REFERENCES `Telefono`(`idTelefono`);
+CREATE TABLE `TelefonoUnidad` (
+	`idTelUni` INT NOT NULL AUTO_INCREMENT,
+	`idUnidad` INT NOT NULL,
+	`idTelefono` INT NOT NULL,
+	PRIMARY KEY (`idTelUni`)
+);
 
-ALTER TABLE `Unidad` ADD CONSTRAINT `Unidad_fk1` FOREIGN KEY (`idHorario`) REFERENCES `Horario`(`idHorario`);
+CREATE TABLE `HorarioUnidad` (
+	`idHoraUni` INT NOT NULL AUTO_INCREMENT,
+	`idUnidad` INT NOT NULL,
+	`idHorario` INT NOT NULL,
+	PRIMARY KEY (`idHoraUni`)
+);
 
 ALTER TABLE `Proceso` ADD CONSTRAINT `Proceso_fk0` FOREIGN KEY (`idUnidad`) REFERENCES `Unidad`(`idUnidad`);
 
@@ -63,4 +71,12 @@ ALTER TABLE `ProcesoRequisito` ADD CONSTRAINT `ProcesoRequisito_fk0` FOREIGN KEY
 ALTER TABLE `ProcesoRequisito` ADD CONSTRAINT `ProcesoRequisito_fk1` FOREIGN KEY (`idRequisito`) REFERENCES `Requisito`(`idRequisito`);
 
 ALTER TABLE `Horario` ADD CONSTRAINT `Horario_fk0` FOREIGN KEY (`idDia`) REFERENCES `Dia`(`idDia`);
+
+ALTER TABLE `TelefonoUnidad` ADD CONSTRAINT `TelefonoUnidad_fk0` FOREIGN KEY (`idUnidad`) REFERENCES `Unidad`(`idUnidad`);
+
+ALTER TABLE `TelefonoUnidad` ADD CONSTRAINT `TelefonoUnidad_fk1` FOREIGN KEY (`idTelefono`) REFERENCES `Telefono`(`idTelefono`);
+
+ALTER TABLE `HorarioUnidad` ADD CONSTRAINT `HorarioUnidad_fk0` FOREIGN KEY (`idUnidad`) REFERENCES `Unidad`(`idUnidad`);
+
+ALTER TABLE `HorarioUnidad` ADD CONSTRAINT `HorarioUnidad_fk1` FOREIGN KEY (`idHorario`) REFERENCES `Horario`(`idHorario`);
 

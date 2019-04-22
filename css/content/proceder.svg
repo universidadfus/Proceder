@@ -22,18 +22,6 @@
      id="defs2">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient1342">
-      <stop
-         style="stop-color:#808080;stop-opacity:1;"
-         offset="0"
-         id="stop1338" />
-      <stop
-         style="stop-color:#e6e6e6;stop-opacity:1"
-         offset="1"
-         id="stop1340" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
        id="linearGradient6222">
       <stop
          style="stop-color:#e6e6e6;stop-opacity:1;"
@@ -311,15 +299,6 @@
          stdDeviation="0.43168394"
          id="feGaussianBlur1060" />
     </filter>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1342"
-       id="linearGradient1344"
-       x1="-0.13229191"
-       y1="271.07079"
-       x2="66.931198"
-       y2="272.69113"
-       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -329,16 +308,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="381.35052"
+     inkscape:cx="206.35052"
      inkscape:cy="54.173152"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="in"
-     inkscape:window-width="1366"
-     inkscape:window-height="713"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-width="1280"
+     inkscape:window-height="971"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:measure-start="0,0"
      inkscape:measure-end="0,0" />
@@ -350,7 +329,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -360,7 +339,7 @@
      id="layer1"
      transform="translate(0,-245.93537)">
     <rect
-       style="opacity:1;fill:url(#linearGradient1344);fill-opacity:1;stroke:#000000;stroke-width:0.26458383;stroke-opacity:0"
+       style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:0.26458383;stroke-opacity:0"
        id="rect1298"
        width="132.5565"
        height="51.858433"

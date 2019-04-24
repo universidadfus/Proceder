@@ -1,22 +1,27 @@
-
-.manImg:hover{
-
-cursor: pointer;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.manImg:active{
-
-background-color: yellow;
-
-}
-
-.manImg{
-
-	width: 18px;
+.copysvg{
+ 	width: 18px;
 	height: 18px;
-
+    transition-duration: 0.2s;
+    fill: #212529;
 }
+.copysvg:hover {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	fill:  #c33230;
+}
+
+.copysvg:active{
+ 	width: 18px;
+	height: 18px;
+    transition-duration: 0.4s;
+    fill: #212529;
+}
+.copysvg:hover .tooltiptext{
+visibility: visible;
+}
+
+.tooltiptext{
+visibility: hidden;
+}
+

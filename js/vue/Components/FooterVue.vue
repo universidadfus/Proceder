@@ -10,8 +10,8 @@ var nav = Vue.component('footerglobal', {
     template: `
             <div class="footer py-3">
                <footer>
-                <p class="col-sm-12 col-md-12 text-center text-white">{{NameCompany}}</p>
-                <p class="col-sm-12 col-md-12  text-center text-white">{{Desarrollado}}</p>
+                <p class="col-sm-12 col-md-12 text-center text-white"><b>{{NameCompany}}</b></p>
+                <p class="col-sm-12 col-md-12  text-center text-white"><b>{{Desarrollado}}</b></p>
              </footer>
             </div>
   `

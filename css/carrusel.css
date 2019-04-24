@@ -1,19 +1,22 @@
-.carousel-inner{
-         /*height: 200px;*/
-       border-radius: 7px 7px 7px 7px;
-    }
-.carousel-item img {
 
-   /*	height: 200px;*/
-   }
+.manImg:hover{
 
-.carousel-item .img-fluid {
-  width:100%;
-  /*height:100%;*/
+cursor: pointer;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
-#carouselExampleIndicators{
-margin-top: 15px;
+.manImg:active{
+
+background-color: yellow;
 
 }
 
+.manImg{
+
+	width: 18px;
+	height: 18px;
+
+}
